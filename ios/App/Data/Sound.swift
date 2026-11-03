@@ -34,7 +34,7 @@ final class Sound {
     }
 
     /// (częstotliwość Hz, start s, długość s, głośność)
-    private func play(_ notes: [(Double, Double, Double, Float)], wave: (Double) -> Double = { sin($0) }) {
+    private func play(_ notes: [(Double, Double, Double, Float)], wave: @escaping (Double) -> Double = { sin($0) }) {
         guard enabled else { return }
         DispatchQueue.main.async { [self] in
             guard start() else { return }
