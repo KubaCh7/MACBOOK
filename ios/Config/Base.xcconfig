@@ -1,0 +1,15 @@
+// macbook progress — wspólne ustawienia.
+// Numer wersji: zwiększ APP_BUILD przy każdej aktualizacji i ustaw to samo
+// w Supabase: app_config → ios_update → latest_build. Wtedy w aplikacji
+// pojawi się baner „Dostępna nowa wersja”.
+APP_BUILD = 1
+APP_VERSION = 1.0
+
+// Wartości domyślne — nadpisuje je Secrets.xcconfig (nie ma go w repo).
+BUNDLE_ID_PREFIX = com.example.changeme
+SUPABASE_HOST =
+SUPABASE_PUBLISHABLE_KEY =
+
+#include? "Secrets.xcconfig"
+
+APP_GROUP = group.$(BUNDLE_ID_PREFIX).macbookprogress
