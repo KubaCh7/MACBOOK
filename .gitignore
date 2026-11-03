@@ -1,0 +1,20 @@
+# sekrety – nigdy w repo
+.env
+.env.*
+!.env.example
+web/.env
+web/.env.local
+ios/Config/Secrets.xcconfig
+
+node_modules/
+dist/
+.DS_Store
+.vercel
+.taste-skill/
+*.log
+
+# Xcode
+xcuserdata/
+DerivedData/
+*.xcuserstate
+build/
